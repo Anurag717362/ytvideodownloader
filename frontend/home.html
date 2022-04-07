@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <h3>Registeration</h3>
+   <form action="/cgi-bin/backend/home.py" method="get">
+       <table align="center">
+           <tr>
+               <td><label for="name">Name:</label></td>
+               <td><input type="text" name="name" id="name"></td>
+           </tr>
+           <tr>
+               <td><label>Gender:</label></td>
+               <td>
+                   <input type="radio" name="gender" id="male" value="Male">
+                   <label for="male">Male</label>
+                   <input type="radio" name="gender" id="female" value="Female">
+                   <label for="female">Female</label>
+               </td>
+           </tr>
+           <tr>
+               <td><label for="options">Cars:</label></td>
+               <td>
+                   <select name="cars" id="options">
+                       <option value="ferrari">Ferrari</option>
+                       <option value="Jaguar">Jaguar</option>
+                       <option value="mustang">Mustang</option>
+                       <option value="chevrolt">Chevrolt</option>
+                       <option value="lamborghini">Lamborghini</option>
+                       <option value="mercedes benz" selected>Mercedes Benz</option>
+                       <option value="bmw">BMW</option>
+                       <option value="audi">Audi</option>
+                   </select>
+               </td>
+           </tr>
+           <tr>
+               <td><label for="number">Phone Number:</label></td>
+               <td><input type="text" id="number" name="number"></td>
+           </tr>
+           <tr>
+               <td><input type="submit" value="Submit"></td>
+           </tr>
+       </table>
+   </form>
+</body>
+</html>
